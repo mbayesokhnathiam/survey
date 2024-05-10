@@ -1,0 +1,27 @@
+
+  
+/* Couleur de fond du stepper */
+.mat-horizontal-stepper, .mat-vertical-stepper {
+    background-color: #f0f0f0; /* Couleur de fond personnalisée */
+  }
+  
+  /* Couleur des étapes non terminées */
+  .mat-step:not(.mat-step-completed) .mat-step-icon {
+    background-color: #999; /* Couleur personnalisée */
+  }
+  
+  /* Couleur des étapes terminées */
+  .mat-step-completed .mat-step-icon {
+    background-color: #4CAF50; /* Couleur personnalisée */
+  }
+  
+  /* Couleur du texte des étapes */
+  .mat-step-label {
+    color: #333; /* Couleur personnalisée */
+  }
+  
+  /* Couleur de la barre de progression entre les étapes */
+  .mat-step-header .mat-step-header-line {
+    background-color: #999; /* Couleur personnalisée */
+  }
+  
