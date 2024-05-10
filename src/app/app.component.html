@@ -21,8 +21,83 @@
         <!-- Étapes -->
 
         <mat-step *ngFor="let step of [0, 1, 2, 3]">
-          <!-- Contenu de l'étape -->
+          <form>
+          <div class="tab-pane" id="progress-seller-details"  *ngIf="currentStep === 0">
+            <div class="text-center mb-4">
+                <h5>Introduction</h5>
+                <p class="card-title-desc">Fill all information below</p>
+            </div>
+            
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="mb-3">
+                            <label for="progresspill-firstname-input">First name</label>
+                            <input type="text" class="form-control" id="progresspill-firstname-input" placeholder="Enter your First Name">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="mb-3">
+                            <label for="progresspill-lastname-input">Last name</label>
+                            <input type="text" class="form-control" id="progresspill-lastname-input" placeholder="Enter your Last Name">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="mb-3">
+                            <label for="progresspill-phoneno-input">Phone</label>
+                            <input type="text" class="form-control" id="progresspill-phoneno-input" placeholder="Enter your Phone No">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="mb-3">
+                            <label for="progresspill-email-input">Email</label>
+                            <input type="email" class="form-control" id="progresspill-email-input" placeholder="Enter your Email">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="mb-3">
+                            <label for="progresspill-address-input">Address</label>
+                            <textarea id="progresspill-address-input" class="form-control" rows="2" placeholder="Enter your address"></textarea>
+                        </div>
+                    </div>
+                </div>
+            
+            
+        </div>
+
+        <div class="tab-pane" id="progress-seller-details"  *ngIf="currentStep === 1">
+          <div class="text-center mb-4">
+              <h5>Etape 2</h5>
+              <p class="card-title-desc">Fill all information below</p>
+          </div>
           
+              <div class="row">
+                  <div class="col-lg-6">
+                      <div class="mb-3">
+                          <label for="progresspill-firstname-input">First name</label>
+                          <input type="text" class="form-control" id="progresspill-firstname-input" placeholder="Enter your First Name">
+                      </div>
+                  </div>
+                  <div class="col-lg-6">
+                      <div class="mb-3">
+                          <label for="progresspill-lastname-input">Last name</label>
+                          <input type="text" class="form-control" id="progresspill-lastname-input" placeholder="Enter your Last Name">
+                      </div>
+                  </div>
+              </div>
+
+
+          
+          
+      </div>
+
+
+
+      </form>
 
         </mat-step>
       </mat-horizontal-stepper>
